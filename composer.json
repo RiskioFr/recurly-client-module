@@ -1,0 +1,35 @@
+{
+    "name": "riskio/recurly-client-module",
+    "description": "Recurly client integration into ZF2",
+    "type": "library",
+    "keywords": [
+        "zf2", "recurly", "subscription", "billing", "client"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/RiskioFr/recurly-client-module",
+    "authors": [
+        {
+            "name": "Nicolas Eeckeloo",
+            "email": "neeckeloo@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "recurly/recurly-client": "~2.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.3",
+        "zendframework/zend-mvc": "~2.7",
+        "zendframework/zend-servicemanager": "~2.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Riskio\\Recurly\\ClientModule\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Riskio\\Recurly\\ClientModuleTest\\": "tests/"
+        }
+    }
+}

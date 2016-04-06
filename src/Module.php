@@ -3,7 +3,6 @@ namespace Riskio\Recurly\ClientModule;
 
 use Recurly_Client;
 use Recurly_js;
-use Zend\Loader\StandardAutoloader;
 use Zend\Mvc\MvcEvent;
 
 class Module
@@ -29,16 +28,5 @@ class Module
     public function getConfig()
     {
         return include __DIR__ . '/config/module.config.php';
-    }
-
-    public function getAutoloaderConfig()
-    {
-        return array(
-            StandardAutoloader::class => array(
-                'namespaces' => array(
-                    __NAMESPACE__ => __DIR__ . '/src/' . __NAMESPACE__,
-                ),
-            ),
-        );
     }
 }

@@ -1,37 +1,33 @@
 <?php
 namespace Riskio\Recurly\ClientModuleTest\Factory;
 
+use Interop\Container\ContainerInterface;
 use Riskio\Recurly\ClientModule\Exception\RuntimeException;
 use Riskio\Recurly\ClientModule\Factory\ConfigFactory;
-use Zend\ServiceManager\ServiceManager;
 
 class ConfigFactoryTest extends \PHPUnit_Framework_TestCase
 {
     public function testCreateService()
     {
-        $serviceManager = new ServiceManager();
-        $serviceManager->setService('Config', [
+        $container = $this->prophesize(ContainerInterface::class);
+        $container->get('Config')->willReturn([
             'recurly' => [],
         ]);
 
         $factory = new ConfigFactory();
 
-        $config = $factory($serviceManager);
+        $config = $factory($container->reveal());
         $this->assertInternalType('array', $config);
     }
 
-    /**
-     * @expectedException \Riskio\Recurly\ClientModule\Exception\RuntimeException
-     */
     public function testCreateServiceWithoutRecurlyConfigKey()
     {
-        $serviceManager = new ServiceManager();
-        $serviceManager->setService('Config', []);
+        $container = $this->prophesize(ContainerInterface::class);
+        $container->get('Config')->willReturn([]);
 
         $factory = new ConfigFactory();
 
-        $this->setExpectedException(RuntimeException::class);
-        $config = $factory($serviceManager);
-        $this->assertInternalType('array', $config);
+        $this->expectException(RuntimeException::class);
+        $factory($container->reveal());
     }
 }

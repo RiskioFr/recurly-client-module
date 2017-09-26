@@ -3,6 +3,11 @@ Recurly client module for Zend Framework
 
 Recurly client module provides a simple integration into Zend Framework of Recurly client library that interact with Recurly's subscription management through [REST API](http://docs.recurly.com/api).
 
+[![Latest Stable Version](http://img.shields.io/packagist/v/riskio/recurly-client-module.svg?style=flat-square)](https://packagist.org/packages/riskio/recurly-client-module)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
+[![Build Status](https://img.shields.io/travis/RiskioFr/recurly-client-module.svg?style=flat-square)](http://travis-ci.org/RiskioFr/recurly-client-module)
+[![Total Downloads](http://img.shields.io/packagist/dt/riskio/recurly-client-module.svg?style=flat-square)](https://packagist.org/packages/riskio/recurly-client-module)
+
 ## Introduction
 
 Recurly client module provides a config file to initialize simply [REST API](http://docs.recurly.com/api) client.

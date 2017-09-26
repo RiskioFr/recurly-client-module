@@ -2,10 +2,11 @@
 namespace Riskio\Recurly\ClientModuleTest\Factory;
 
 use Interop\Container\ContainerInterface;
+use PHPUnit\Framework\TestCase;
 use Riskio\Recurly\ClientModule\Exception\RuntimeException;
 use Riskio\Recurly\ClientModule\Factory\ConfigFactory;
 
-class ConfigFactoryTest extends \PHPUnit_Framework_TestCase
+class ConfigFactoryTest extends TestCase
 {
     public function testCreateService()
     {

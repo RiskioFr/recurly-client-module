@@ -1,5 +1,5 @@
 <?php
-use Riskio\Recurly\ClientModule\Factory\ConfigFactory;
+use Riskio\Recurly\ClientModule\Container\ConfigFactory;
 
 return [
     'recurly' => [

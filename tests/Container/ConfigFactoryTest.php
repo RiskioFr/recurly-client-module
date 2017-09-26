@@ -1,10 +1,10 @@
 <?php
-namespace Riskio\Recurly\ClientModuleTest\Factory;
+namespace Riskio\Recurly\ClientModuleTest\Container;
 
-use Interop\Container\ContainerInterface;
 use PHPUnit\Framework\TestCase;
+use Psr\Container\ContainerInterface;
 use Riskio\Recurly\ClientModule\Exception\RuntimeException;
-use Riskio\Recurly\ClientModule\Factory\ConfigFactory;
+use Riskio\Recurly\ClientModule\Container\ConfigFactory;
 
 class ConfigFactoryTest extends TestCase
 {

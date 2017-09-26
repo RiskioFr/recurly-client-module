@@ -3,8 +3,8 @@ use Riskio\Recurly\ClientModule\Factory\ConfigFactory;
 
 return [
     'recurly' => [
-        'subdomain'   => null,
-        'api_key'     => null,
+        'subdomain' => null,
+        'api_key' => null,
         'private_key' => null,
     ],
 

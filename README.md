@@ -1,45 +1,33 @@
-Recurly client module for ZF2
-======================
+Recurly client module for Zend Framework
+========================================
 
-Recurly client module provides a simple integration into ZF2 of Recurly client library that interact with Recurly's subscription management through [REST API](http://docs.recurly.com/api).
+Recurly client module provides a simple integration into Zend Framework of Recurly client library that interact with Recurly's subscription management through [REST API](http://docs.recurly.com/api).
 
-Introduction
-------------
+## Introduction
 
 Recurly client module provides a config file to initialize simply [REST API](http://docs.recurly.com/api) client.
 
-Requirements
-------------
+## Requirements
 
-* PHP 7 or higher
-* [Recurly PHP Library](https://github.com/recurly/recurly-client-php)
+* PHP 7.0+
+* [zendframework/zend-mvc ^3.0](https://github.com/zendframework/zend-mvc)
+* [recurly/recurly-client ^2.5.3](https://github.com/recurly/recurly-client-php)
 
-Installation
-------------
+## Installation
 
 Recurly client module only officially supports installation through Composer. For Composer documentation, please refer to
 [getcomposer.org](http://getcomposer.org/).
 
 You can install the module from command line:
-```sh
-$ php composer.phar require riskio/recurly-client-module:~0.1
-```
 
-Alternatively, you can also add manually the dependency in your `composer.json` file:
-```json
-{
-    "require": {
-        "riskio/recurly-client-module": "~0.1"
-    }
-}
+```sh
+$ composer require riskio/recurly-client-module
 ```
 
 Enable the module by adding `Riskio\Recurly\ClientModule` key to your `application.config.php` file. Customize the module by copy-pasting
-the `recurly.client.local.php.dist` file to your `config/autoload` folder.
+the `recurly-client.local.php.dist` file to your `config/autoload` folder.
     
-
-Configuration
--------------
+## Configuration
 
 Set your subdomain and API key. If you are using Recurly.js, specify also your private key.
 

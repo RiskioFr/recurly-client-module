@@ -46,3 +46,18 @@ return [
     ],
 ];
 ```
+
+## Testing
+
+``` bash
+$ vendor/bin/phpunit
+```
+
+## Credits
+
+- [Nicolas Eeckeloo](https://github.com/neeckeloo)
+- [All Contributors](https://github.com/RiskioFr/recurly-client-module/contributors)
+
+## License
+
+The MIT License (MIT). Please see [License File](https://github.com/RiskioFr/recurly-client-module/blob/master/LICENSE) for more information.

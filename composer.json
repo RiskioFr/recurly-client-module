@@ -31,5 +31,11 @@
         "psr-4": {
             "Riskio\\Recurly\\ClientModuleTest\\": "tests/"
         }
+    },
+    "extra": {
+        "zf": {
+            "config-provider": "Riskio\\Recurly\\ClientModule\\ConfigProvider",
+            "module": "Riskio\\Recurly\\ClientModule\\Module"
+        }
     }
 }

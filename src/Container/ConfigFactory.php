@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 namespace Riskio\Recurly\ClientModule\Container;
 
 use Psr\Container\ContainerInterface;

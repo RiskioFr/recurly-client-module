@@ -15,7 +15,7 @@ Recurly client module provides a config file to initialize simply [REST API](htt
 ## Requirements
 
 * PHP 7.0+
-* [zendframework/zend-mvc ^3.0](https://github.com/zendframework/zend-mvc)
+* [psr/container ^1.0](https://github.com/php-fig/container)
 * [recurly/recurly-client ^2.5.3](https://github.com/recurly/recurly-client-php)
 
 ## Installation

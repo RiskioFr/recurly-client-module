@@ -16,8 +16,7 @@
     "require": {
         "php": "^7.0",
         "psr/container": "^1.0",
-        "recurly/recurly-client": "^2.5.3",
-        "zendframework/zend-mvc": "~3.0"
+        "recurly/recurly-client": "^2.5.3"
     },
     "require-dev": {
         "phpunit/phpunit": "~6.0"

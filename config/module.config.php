@@ -1,5 +1,6 @@
 <?php
-use Riskio\Recurly\ClientModule\Container\ConfigFactory;
+use Riskio\Recurly\ClientModule\ClientOptions;
+use Riskio\Recurly\ClientModule\Container\ClientOptionsFactory;
 
 return [
     'recurly' => [
@@ -10,7 +11,7 @@ return [
 
     'service_manager' => [
         'factories' => [
-            'Riskio\Recurly\ClientModule\Config' => ConfigFactory::class,
+            ClientOptions::class => ClientOptionsFactory::class,
         ],
     ],
 ];
